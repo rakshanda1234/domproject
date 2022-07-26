@@ -38,6 +38,7 @@ console.log(document.images);
 // Task-4 //
 
 //GETELEMENTBYCLASSNAME //
+/*
 var item = document.getElementsByClassName("list-group-item");
 console.log(item);
 console.log(item[1]);
@@ -53,3 +54,19 @@ for (var i = 0; i < item.length; i++) {
   item[2].style.backgroundColor = "green";
 }
 main.style.fontWeight = "bold";
+
+*/
+
+// Task - 5 //
+
+//GETELEMENTBYTAGNAME //
+var li = document.getElementsByTagName("li");
+console.log(li);
+console.log(li[1]);
+li[1].textContent = "Hello 2";
+li[1].style.fontWeight = "bold";
+li[1].style.backgroundColor = "yellow";
+
+for (var i = 0; i < li.length; i++) {
+  li[i].style.backgroundColor = "#f4f4f4";
+}

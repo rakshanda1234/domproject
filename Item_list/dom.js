@@ -21,16 +21,35 @@ console.log(document.images);
 
 //GET ELEMENT BY ID//
 //console.log(document.getElementById("header-title"));
-var headerTitle = document.getElementById("header-title");
-var header = document.getElementById("main-header");
+// var headerTitle = document.getElementById("header-title");
+// var header = document.getElementById("main-header");
 
 //console.log(headerTitle);
 //headerTitle.textContent = "Hello";
 //headerTitle.innerText = "Goodbye";
 //console.log(headerTitle.textContent);
 //console.log(headerTitle.innerText);
-headerTitle.innerHTML = "<h3>Hello</h3>";
+// headerTitle.innerHTML = "<h3>Hello</h3>";
 
-header.style.borderBottom = "solid 3px #000";
-title.style.fontWeight = "bold";
-title.style.color = "green";
+// header.style.borderBottom = "solid 3px #000";
+// title.style.fontWeight = "bold";
+// title.style.color = "green";
+
+// Task-4 //
+
+//GETELEMENTBYCLASSNAME //
+var item = document.getElementsByClassName("list-group-item");
+console.log(item);
+console.log(item[1]);
+item[1].textContent = "Hello 2";
+item[1].style.fontWeight = "bold";
+item[1].style.backgroundColor = "yellow";
+
+//Gives error
+//item.style.backgroundColor = "#f4f4f4";
+
+for (var i = 0; i < item.length; i++) {
+  item[1].style.backgroundColor = "#f4f4f4";
+  item[2].style.backgroundColor = "green";
+}
+main.style.fontWeight = "bold";

@@ -58,7 +58,7 @@ main.style.fontWeight = "bold";
 */
 
 // Task - 5 //
-
+/*
 //GETELEMENTBYTAGNAME //
 var li = document.getElementsByTagName("li");
 console.log(li);
@@ -69,4 +69,44 @@ li[1].style.backgroundColor = "yellow";
 
 for (var i = 0; i < li.length; i++) {
   li[i].style.backgroundColor = "#f4f4f4";
+}
+ */
+
+// Task - 6 //
+
+// QUERYSELECTOR //
+var header = document.querySelector("#main-header");
+header.getElementsByClassName.borderBottom = "solid 4px #ccc";
+
+var input = document.querySelector("input");
+input.value = "Hello world";
+
+var submit = document.querySelector('input[type="submit"]');
+submit.value = "SEND";
+
+var item = document.querySelector(".list-group-item");
+item.style.color = "red";
+
+var lastItem = document.querySelector(".list-group-item:last-child");
+console.log("lastItem is", lastItem);
+lastItem.style.color = "blue";
+
+var secondItem = document.querySelector(".list-group-item:nth-child(2)");
+secondItem.style.backgroundColor = "green";
+
+var thirdItem = document.querySelector(".list-group-item:nth-child(3)");
+thirdItem.style.visibility = "hidden";
+
+//QUERYSELECTORALL//
+
+var titles = document.querySelectorAll(".title");
+console.log(titles);
+titles[0].textContent = "Hello";
+
+var odd = document.querySelectorAll("li:nth-child(odd)");
+var even = document.querySelectorAll("li:nth-child(even)");
+
+for (var i = 0; i < odd.length; i++) {
+  odd[i].style.backgroundColor = "green";
+  even[i].style.backgroundColor = "#ccc";
 }

@@ -91,12 +91,14 @@ var lastItem = document.querySelector(".list-group-item:last-child");
 console.log("lastItem is", lastItem);
 lastItem.style.color = "blue";
 
+///deliverable 1
 var secondItem = document.querySelector(".list-group-item:nth-child(2)");
 secondItem.style.backgroundColor = "green";
 
 var thirdItem = document.querySelector(".list-group-item:nth-child(3)");
 thirdItem.style.visibility = "hidden";
 
+//deliverable 2
 //QUERYSELECTORALL//
 
 var titles = document.querySelectorAll(".title");
@@ -109,4 +111,5 @@ var even = document.querySelectorAll("li:nth-child(even)");
 for (var i = 0; i < odd.length; i++) {
   odd[i].style.backgroundColor = "green";
   even[i].style.backgroundColor = "#ccc";
+
 }
